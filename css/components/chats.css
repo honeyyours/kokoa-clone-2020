@@ -1,0 +1,102 @@
+.instaTalk-main {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  background-color: var(--main-backColor);
+}
+
+.chats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@keyframes hoverOver {
+  100% {
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.5),
+      5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+}
+
+.chat {
+  width: 150px;
+  height: 200px;
+  background-color: var(--main-backColor);
+  margin-right: 1px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.chat:hover {
+  animation: hoverOver 0.1s ease;
+  animation-fill-mode: forwards;
+}
+
+.chat__info {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #576c80;
+}
+
+.chat__info__avatoar {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.chat__chatSum {
+  position: relative;
+  zoom: 0.75;
+}
+
+.chat__info__notification-rel {
+  position: relative;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.chat__info__notification {
+  position: absolute;
+  right: 5px;
+  top: -8px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: tomato;
+  color: white;
+  font-size: 13px;
+  animation: notificationAnimation 1s ease-in-out infinite;
+}
+
+.chat__info__avatoar {
+  margin-left: 5px;
+}
+.chat__info__username {
+  margin-left: -20px;
+}
+
+.message__info__sum {
+  margin-top: 6px;
+  margin-bottom: 2px;
+}

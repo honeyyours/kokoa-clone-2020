@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="kr">
   <head>
+    <!-- reset css -->
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,23 +22,28 @@
         <i class="fas fa-retweet"></i>
       </div>
     </div>
-
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome To Kokoa Clone</h1>
+      <h1 class="welcome-header__title">Welcome To MixTalk</h1>
       <p class="welcome-header__text">
-        Whether you have a Kakao Account or not, just input anyword. Then it
-        will move on to next page.
+        Whether you have a Account or not, just input anyword. Then it will move
+        on to next page.
       </p>
     </header>
-
-    <form>
-      <input type="text" placeholder="Email or phone" />
-      <input type="password" placeholder="password" />
-      <input type="submit" value="Log In" />
-      <button>Sign Up</button>
+    <form action="main.html" method="GET" class="login-form">
+      <input
+        required
+        type="text"
+        placeholder="This type is text, don't worry write any text"
+      />
+      <input required type="password" placeholder="password" />
+      <input required type="submit" value="Log In" />
 
       <a href="https://kakaotalk.com">Find Kakao Account or Passord</a>
     </form>
+
+    <div id="no-mobile">
+      <span>You know what to do, don't you?</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/06d43c30eb.js"

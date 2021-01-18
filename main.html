@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="screen-fixed">
+      <!-- - - 상 태 바 - - -->
+      <div id="status-bar">
+        <div class="status-bar__column">
+          <span>no service</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>15:20</span>
+        </div>
+        <div class="status-bar__column">
+          <span>10%</span>
+          <i class="fas fa-battery-quarter"></i>
+          <i class="fas fa-retweet"></i>
+        </div>
+      </div>
+      <!-- - - 로고 찾기 헤더 - - -->
+      <header class="screen-header">
+        <h1 class="screen-header__title">InstaTalk</h1>
+        <div class="screen-header__icons"></div>
+      </header>
+
+      <div class="me-info">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://i.pinimg.com/564x/fe/17/41/fe174100819cc253196581aa99d907fa.jpg"
+              class="user-component__avatar user-component__avatar--xl"
+            />
+          </div>
+        </div>
+        <div class="me-info__text">
+          <div class="me-info__new__count count">2</div>
+          <div class="me-info__new__text counttext">새 메시지</div>
+        </div>
+        <div class="me-info__chats me-info__text">
+          <div class="me-info__chats__count count">8</div>
+          <div class="me-info__chats__text counttext">채팅</div>
+        </div>
+        <div class="me-info__friends me-info__text">
+          <div class="me-info__friends__count count">286</div>
+          <div class="me-info__friends__text counttext">친구들</div>
+        </div>
+      </div>
+    </div>
+
+    <main class="instaTalk-main">
+      <!-- --내 상태 및 정보-- -->
+
+      <!-- ---기준선-- -->
+      <div class="friends-screen__channel"></div>
+      <!-- --인스타그램 스타일 사각형인데 채팅방-- -->
+      <div class="chats">
+        <a class="nav__link" href="chat-nical.html">
+          <div class="chat">
+            <div class="chat__info">
+              <img
+                class="chat__info__avatoar"
+                src="https://avatars3.githubusercontent.com/u/3612017"
+                alt=""
+              />
+              <div class="chat__info__username">니꼴라스</div>
+              <div class="chat__info__notification-rel">
+                <span class="chat__info__notification">2</span>
+              </div>
+            </div>
+            <div class="chat__chatSum">
+              <div class="message__info message__info__sum">
+                <span class="message__bubble">Hi!</span>
+              </div>
+              <div class="message__info message-row--own message__info__sum">
+                <span class="message__bubble">Hi nice to meet you!</span>
+              </div>
+              <div class="message__info message__info__sum">
+                <span class="message__bubble">how are you?</span>
+              </div>
+              <div class="message__info message__info__sum">
+                <span class="message__bubble">are you ok?</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="chat">
+          <div class="chat__info"></div>
+          <div class="chat__chatSum"></div>
+        </div>
+        <div class="chat">
+          <div class="chat__info"></div>
+          <div class="chat__chatSum"></div>
+        </div>
+        <div class="chat">
+          <div class="chat__info"></div>
+          <div class="chat__chatSum"></div>
+        </div>
+        <div class="chat">
+          <div class="chat__info"></div>
+          <div class="chat__chatSum"></div>
+        </div>
+        <div class="chat">
+          <div class="chat__info"></div>
+          <div class="chat__chatSum"></div>
+        </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="main.html">
+            <i class="fas fa-home fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="sharp.html"
+            ><i class="fab fa-slack-hash fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>You know what to do, don't you?</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/06d43c30eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
